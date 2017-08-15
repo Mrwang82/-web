@@ -1,0 +1,226 @@
+#ctl00_header1 {
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+#ctl00_header1 .logo {
+  padding: 12px;
+  float: left;
+}
+#ctl00_header1 .logo a {
+  display: block;
+  height: 100%;
+}
+#ctl00_header1 .logo a img {
+  max-height: 25px;
+  overflow: hidden;
+}
+#ctl00_header1 .appdown {
+  float: right;
+  padding: 7px;
+}
+#ctl00_header1 .appdown a {
+  display: block;
+  height: 100%;
+}
+#ctl00_header1 .appdown a img {
+  max-height: 34px;
+  overflow: hidden;
+}
+#ctl00_header2 {
+  padding: 10px;
+}
+#ctl00_header2 .form_search {
+  display: flex;
+}
+#ctl00_header2 .form_search input[type="text"] {
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 15px;
+  padding-left: 18px;
+  margin-right: 10px;
+}
+#ctl00_header2 .form_search input[type="button"] {
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff841d;
+  width: 63px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+#menu {
+  border-top: 10px solid #f1f1f1;
+}
+#menu .item {
+  text-align: center;
+}
+#menu .item a img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+#menu .item a img p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+#menu .item:nth-last-child(-n+4) {
+  display: none;
+}
+#discount .discount-title {
+  margin-top: 4px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff9000;
+  border-bottom: solid 1px #ffc881;
+  overflow: hidden;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#discount .discount-title span {
+  float: left;
+}
+#discount .discount-title img {
+  float: right;
+  margin-right: 10px;
+  color: #FFF;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+#discount .cu-list {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  max-width: 960px;
+  margin: 0px auto;
+}
+#discount .cu-list ul {
+  list-style: none;
+}
+#discount .cu-list ul li {
+  padding: 14px 8px;
+  position: relative;
+}
+#discount .cu-list ul li a .pic {
+  float: left;
+  width: 110px;
+}
+#discount .cu-list ul li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+#discount .cu-list ul li a .info {
+  padding-left: 90px;
+  font-size: 14px;
+  line-height: 24px;
+}
+#discount .cu-list ul li a .info .title {
+  color: #333333;
+  word-break: break-all;
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 57px;
+  text-align: left;
+  font-weight: normal;
+}
+#discount .cu-list ul li a .info .title span {
+  color: #ff6c00;
+  display: inline;
+}
+#discount .cu-list ul li a .info .other {
+  margin-top: 8px;
+  color: #a1a1a1;
+}
+#discount .cu-list ul li a .info .other .mall {
+  color: #a1a1a1;
+  font-size: 12px;
+  float: left;
+}
+#discount .cu-list ul li a .info .other .comment {
+  color: #a1a1a1;
+  font-size: 12px;
+  float: right;
+}
+#discount .more_bar {
+  text-align: center;
+  width: 100%;
+}
+#discount .more_bar a {
+  display: block;
+  line-height: 30px;
+  background: #F4F4F4;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+#jxhd .discount-title {
+  margin-top: 4px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff9000;
+  border-bottom: solid 1px #ffc881;
+  overflow: hidden;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#jxhd .discount-title span {
+  float: left;
+}
+#jxhd .discount-title img {
+  float: right;
+  margin-right: 10px;
+  color: #FFF;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+#footer {
+  text-align: center;
+  margin-bottom: 1px;
+}
+#footer .foot_top {
+  margin-top: 10px;
+  background: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+}
+#footer .foot_top a {
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+  width: 30%;
+}
+#footer .foot_top .a3 {
+  width: 40%;
+  border: none;
+}
+#footer .foot_top .a3 img {
+  width: 15px;
+  height: 15px;
+  margin-top: -5px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+#footer .foot-bottm {
+  background: #efefef;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0;
+  color: #666;
+}
+#footer .foot-bottm .p1 .a1 {
+  color: red;
+}

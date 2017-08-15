@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>慢慢买</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/base.less">
+    <link rel="stylesheet/less" href="./css/index.css">
+  <!--这里之所以写这个script 是因为控制样式的-->
+     <script src="./js/less.js"></script>
+</head>
+<body>
+     <!--head start-->
+      <div id="ctl00_header1">
+          <div class="logo">
+              <a href="http://m.manmanbuy.com/" title="慢慢买比价网--手机版">
+                  <img src="images/header_logo.png" alt="慢慢买比价网--手机版">
+              </a>
+          </div>
+          <div class="appdown">
+              <a href="http://m.manmanbuy.com/app.html?type=headword&value=wap">
+                  <img src="images/header_app.png" alt="手机app下载">
+              </a>
+          </div>
+      </div>
+     <!--head  end-->
+
+     <!--search start-->
+      <div id="ctl00_header2" class="clearfix">
+          <form action="../Search.aspx" class="form_search"method="get">
+              <input type="text" placeholder="请输入你想比价的商品">
+              <input type="button" value="搜索">
+          </form>
+      </div>
+     <!--search  end-->
+     <!--menu bar star-->
+    <div id="menu" class="clearfix">
+        <div class="item col-xs-3">
+            <a href="listclass.aspx">
+                <img src="./images/ic_bcj.png" alt="">
+                <p>比价搜索</p>
+            </a>
+        </div>
+
+    </div>
+    <!--menu end-->
+   <!--discount start-->
+    <div id="discount">
+        <div class="discount-title">
+            <span>超值折扣推荐</span>
+            <img src="http://www.zuyushop.com/wap/images/more.png" >
+        </div>
+        <div class="cu-list ">
+            <ul>
+                <li>
+                    <a href="#">
+                       <div class="pic">
+                           <img src="http://wnzk-img.zuyushop.com/r_img/img/20170815/16/41fa58f5c6ed41a4a37c8c90d3280116.jpg" alt="">
+                       </div>
+                        <div class="info clearfix">
+                            <div class="title">
+                                HUGO BOSS  50332358  男士皮带
+                                <span>205元包邮（双重优惠）</span>
+                            </div>
+                            <div class="other">
+                                <span class="mall">京东商城 | 08-15 17:07</span>
+                                <span class="comment">
+                                    <i class="icon-comment"></i>
+                                    0
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="more_bar">
+            <a href=" #">更多优惠信息»</a>
+        </div>
+
+    </div>
+    <!--discount end-->
+     <!--品牌排行-->
+     <div id="jxhd">
+         <div class="discount-title">
+             <span>品牌排行</span>
+             <img src="http://www.zuyushop.com/wap/images/more.png" >
+         </div>
+     </div>
+          <!--footer strt-->
+   <div id="footer">
+       <div class="foot_top">
+           <a href="#">登录</a>
+           <a href="#">注册</a>
+           <a href="#" class="a3">
+               <img src="http://www.zuyushop.com/wap/images/top.jpg">
+               返回顶部
+           </a>
+       </div>
+       <div class="foot-bottm">
+           <p class="p1">
+               <a href="#" class="a1">手机APP下载</a>
+               <a href="#">慢慢买手机版</a>
+               <a href="#"> -- 掌上比价平台</a>
+           </p>
+           <p class="p2">m.manmanbuy.com</p>
+       </div>
+
+   </div>
+   <!--footer end-->
+
+
+
+</body>
+<!--菜单-->
+<script type="text/html" id="menu-Product">
+        {{each result as value index}}
+    <div class="item col-xs-3">
+        <a href="#">
+            {{#value.img}}
+            <p>{{value.name}}</p>
+        </a>
+    </div>
+    {{/each}}
+</script>
+<!--折扣-->
+<script type="text/html" id="cu-Product">
+            {{each result as value index}}
+            <div class="cu-list ">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="pic">
+                               {{#value.productImgSm}}
+                            </div>
+                            <div class="info clearfix">
+                                <div class="title">
+                                    {{value.productName}}
+                                    <span>{{value.productPinkage}}</span>
+                                </div>
+                                <div class="other">
+                                    <span class="mall">{{value.productFrom}}||{{value.productTime}}</span>
+                                <span class="comment">
+                                    <i class="icon-comment"></i>
+                                  {{value.productComCount}}
+                                </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            {{/each}}
+</script>
+<script src="./lib/jquery/jquery.js"></script>
+<!--<script src="./lib/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/index.js"></script>
+
+
+</html>
